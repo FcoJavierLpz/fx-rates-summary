@@ -1,7 +1,18 @@
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from './pages/Home';
+import NotFound from './pages/NotFound';
+
 function App() {
 
   return (
-    <h1>FX Rates Summary</h1>
+    <Router>
+      <div>
+        <Routes>
+          <Route path="/" element={<Home />} exact />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </div>
+    </Router>
   )
 }
 
