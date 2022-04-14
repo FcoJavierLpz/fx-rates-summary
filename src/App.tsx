@@ -3,7 +3,6 @@ import Home from './pages/Home';
 import NotFound from './pages/NotFound';
 
 function App() {
-
   return (
     <Router>
       <div>
@@ -13,7 +12,7 @@ function App() {
         </Routes>
       </div>
     </Router>
-  )
+  );
 }
 
-export default App
+export default App;
