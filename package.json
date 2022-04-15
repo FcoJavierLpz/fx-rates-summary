@@ -8,6 +8,7 @@
     "preview": "vite preview",
     "prepare": "husky install",
     "lint": "eslint --ignore-path .gitignore --ext .js,.jsx,.ts,.tsx .",
+    "lint:fix": "eslint --ignore-path .gitignore --ext .js,.jsx,.ts,.tsx . --fix",
     "prettier": "prettier --ignore-path .gitignore \"**/*.+(js|jsx|ts|tsx|css|html|md|json)\" --config ./.prettierrc",
     "format": "npm run prettier -- --write",
     "check-format": "npm run prettier -- --list-different",
