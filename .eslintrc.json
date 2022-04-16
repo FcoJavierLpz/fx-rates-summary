@@ -6,9 +6,10 @@
   "extends": [
     "plugin:react/recommended",
     "standard",
-    "plugin:@typescript-eslint/eslint-recommended",
+    "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
-    "eslint-config-prettier"
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:prettier/recommended"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
@@ -18,8 +19,21 @@
     "ecmaVersion": 12,
     "sourceType": "module"
   },
-  "plugins": ["react", "@typescript-eslint/eslint-plugin"],
+  "plugins": ["react", "@typescript-eslint", "prettier"],
   "rules": {
+    "prettier/prettier": "error",
+    "space-before-function-paren": "off",
+    "react/prop-types": "off",
+    "no-use-before-define": "off",
+    "@typescript-eslint/no-use-before-define": ["error"],
+    "no-shadow": "off",
+    "@typescript-eslint/no-shadow": ["error"],
+    "react/jsx-filename-extension": [
+      "warn",
+      {
+        "extensions": [".tsx"]
+      }
+    ],
     "react/jsx-uses-react": "off",
     "react/react-in-jsx-scope": "off"
   }
