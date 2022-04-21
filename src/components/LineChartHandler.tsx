@@ -3,9 +3,9 @@ import LineChart from './LineChart'
 const colors = ['#16A34A', '#EF476F', '#FFD166', '#118AB2', '#073B4C']
 
 type LineChartHandlerProps = {
-  labels: Array<string>
-  datasets: Array<Array<number>>
-  labelDatasets: Array<string>
+  labels: string[]
+  datasets: number[][]
+  labelDatasets: string[]
   title: string
 }
 
