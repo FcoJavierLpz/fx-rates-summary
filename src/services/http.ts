@@ -6,6 +6,9 @@ const instance = axios.create({
   baseURL: config.baseUrl
 })
 
+instance.defaults.params = {} as object
+instance.defaults.params.access_key = config.apiKey
+
 const handleError = async (error: AxiosError): Promise<AxiosError> => {
   const expectedError =
     error?.response &&
