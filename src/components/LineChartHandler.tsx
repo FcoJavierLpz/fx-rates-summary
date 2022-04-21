@@ -26,7 +26,8 @@ const LineChartHandler = ({
         fontSize: 25
       }
     },
-    layout: { padding: 5 }
+    layout: { padding: 5 },
+    maintainAspectRatio: false
   }
 
   const data: {
