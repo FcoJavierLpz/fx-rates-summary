@@ -1,4 +1,4 @@
 {
-  "baseUrl": "https://data.fixer.io/api/",
+  "baseUrl": "http://data.fixer.io/api/",
   "apiKey": "1a1d0bfad8758f4c71fc99a063af1fcf"
 }
