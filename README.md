@@ -60,3 +60,7 @@ $ npm run format
 ```bash
 $ npm run build && npm run preview
 ```
+
+### Deploy Site
+
+> [https://fx-rates-summary.netlify.app/](https://fx-rates-summary.netlify.app/)
